@@ -12,7 +12,7 @@
 <div class="search-wrap"><input id="searchInput" type="search" placeholder="Search namkeen, mixture..." aria-label="Search products"><button onclick="searchProducts()">🔍</button></div>
 <nav><a href="#home">Home</a><a href="#products">Products</a><a href="#order">Order</a></nav>
 <button class="cart-btn" onclick="openCart()">🛒 Cart <span id="cartCount">0</span></button>
-</div></header>
+</div></header> 
 <div class="category-bar">
 <button class="active" onclick="filterProducts('all',this)">All</button><button onclick="filterProducts('namkeen',this)">Namkeen</button><button onclick="filterProducts('mixture',this)">Mixture</button><button onclick="filterProducts('snacks',this)">Snacks</button>
 </div>
@@ -24,6 +24,7 @@
 <div class="cart-card"><div class="card-title"><h2>🛒 आपका Cart</h2><span id="cartBadge">0 items</span></div><div id="cartItems"><p class="muted">Cart अभी खाली है।</p></div><div class="total"><span>Total</span><strong id="total">₹0</strong></div><button class="clear-btn" onclick="clearCart()">Clear Cart</button></div>
 <div class="customer-card"><h2>👤 Customer Details</h2><label>नाम *</label><input id="name" placeholder="अपना नाम"><label>Mobile Number *</label><input id="phone" inputmode="numeric" maxlength="10" placeholder="10 digit mobile number"><label>पूरा Address *</label><textarea id="address" rows="3" placeholder="House No., Area, City, Pincode"></textarea><label>Payment</label><select id="payment"><option>Cash on Delivery</option><option>UPI / Online Payment</option></select><button class="whatsapp" onclick="sendWhatsApp()">📲 WhatsApp पर Order भेजें</button><p class="hint">Order सीधे <b>9625985012</b> पर WhatsApp होगा।</p></div>
 <div class="contact-card"><h2>📞 हमसे संपर्क करें</h2><div class="contact-box"><strong>Shiv Namkeen Bhandar</strong><p>📍 Ballabhgarh (Faridabad)</p><p>📱 <a href="tel:9625985012">9625985012</a></p><p>🚚 Home Delivery • Bulk Orders</p></div><a class="call-btn" href="tel:9625985012">📞 Call Now</a><a class="wa-btn" href="https://wa.me/919625985012" target="_blank">WhatsApp पर Chat</a></div>
+  <button type="button" onclick="sendGoogleOrder()">📊 Google Sheet Order</button>
 </section></main>
 <footer><div><b>Shiv Namkeen Bhandar</b><br><small>स्वाद ऐसा, कि हर बार याद आए...</small></div><div>Fresh & Hygienic • Best Quality • Reasonable Prices</div><div>© 2026 Shiv Namkeen Bhandar</div></footer>
 <div id="toast" class="toast"></div><script src="script.js" defer></script>
