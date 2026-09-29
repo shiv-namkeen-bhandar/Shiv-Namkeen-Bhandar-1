@@ -1,5 +1,5 @@
 const SHOP_WHATSAPP="919625985012";
-<button type="button" onclick="sendGoogleOrder()">📊 Google Sheet Order</button>
+const ORDER_API_URL="https://script.google.com/macros/s/AKfycbxF9h6zRk1y-BlOu2njZNFID7cf33pvj7y89uTO4opGtou5LQC2hnYMI3BNHnQ6VgNc/exec";
 const products=[
 {id:1,name:"आलू भुजिया",price:240,cat:"namkeen",image:"assets/aloo-bhujia.png"},
 {id:2,name:"नवरतन",price:240,cat:"mixture",image:"assets/navratan.png"},
